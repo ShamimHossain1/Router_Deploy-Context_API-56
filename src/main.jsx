@@ -12,6 +12,9 @@ import OrderReview from './Components/OrderReview/OrderReview';
 import Grandpa from './Grandpa/Grandpa';
 import About from './Components/About/About';
 import Contact from './Components/Contactt/Contact';
+import Error from './Components/ErrorPage/Error';
+
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +26,7 @@ const router = createBrowserRouter([
         element:<Home></Home>,
         loader:()=> fetch('tShirts.json')
       },
-      {
+      { 
         path:'review',
         element: <OrderReview></OrderReview>
       },
@@ -39,8 +42,12 @@ const router = createBrowserRouter([
         path:'contact',
         element:<Contact></Contact>
       },
-    ]
+    ],
   },
+  {
+    path:'*',
+    element:<Error></Error>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
