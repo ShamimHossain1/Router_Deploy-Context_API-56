@@ -16,7 +16,7 @@ const Home = () => {
             return;
         }
         else{
-            toast.success('Added to the cart',{duration: 600})
+            toast.success('Added to the cart',{duration: 600}) 
 
             const newCart = [...cart, tShirt];
             setCart(newCart);
