@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 import './Header.css'
 
 const Header = () => {
     return (
-        <div>
+        <div className='py-10'>
 
             <nav>
                 <Link to='/'>Home</Link>
