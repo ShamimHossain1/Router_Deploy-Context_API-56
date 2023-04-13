@@ -7,7 +7,8 @@ const Myself = () => {
     const received = useContext(Context)
     return (
         <div>
-            <h2>My self {received}</h2>
+            <h2>My self</h2>
+            <small>Got salami {received}</small>
         </div>
     );
 };
