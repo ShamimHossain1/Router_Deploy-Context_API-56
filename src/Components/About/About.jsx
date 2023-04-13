@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Avout = () => {
+const About = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Avout = () => {
     );
 };
 
-export default Avout;
+export default About;
